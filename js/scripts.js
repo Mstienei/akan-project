@@ -18,9 +18,16 @@ function validate() {
     //Compute month Code
     var months = [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5];
     var monthCode = months[mm-1];
-
     //Compute century code
     var year=parseInt(cc.toString()+yy.toString());
-    alert(year);
+        if (year%4===0 && cc%4!==0){
+          alert("not leap year");
+        }
+          else if(year%100===0){
+          alert("leap year");
+        }
+        else {
+        alert("not leap year");
+      }
 }
 };
