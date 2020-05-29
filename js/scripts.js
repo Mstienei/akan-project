@@ -18,16 +18,36 @@ function validate() {
     //Compute month Code
     var months = [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5];
     var monthCode = months[mm-1];
-    //Compute century code
     var year=parseInt(cc.toString()+yy.toString());
-        if (year%4===0 && cc%4!==0){
+    //Compute century code
+      if (year>1752 && cc===17){
+        var centuryCode=4;
+      }else if (cc===18){
+        var centuryCode=2;
+      }else if (cc===19){
+        var centuryCode=0;
+      }else if (cc===20){
+        var centuryCode=6;
+      }else if (cc===21){
+        var centuryCode=4;
+      }else if (cc===22){
+        var centuryCode=2;
+      }else if (cc===23){
+        var centuryCode=0;
+      }
+     else {
+      var centuryCode=(18-cc)%7;
+    }
+        //Compute leap year code
+        if (year%100===0 && cc%4!==0){
           alert("not leap year");
         }
-          else if(year%100===0){
+          else if(year%4===0){
           alert("leap year");
         }
         else {
         alert("not leap year");
       }
+      //alert(centuryCode);
 }
 };
