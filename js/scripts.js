@@ -53,7 +53,17 @@ function validate() {
               var daysOfWeek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
               var dayCode=(yearCode+monthCode+dd-leapYearCode)%7;
               var day=daysOfWeek[dayCode];
-              alert(day);
+              var male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+              var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+              //Translate to Akan Name
+              if (gender=="Female"){
+                var akanFemaleName=female[dayCode];
+                alert("Your Akan name is: "+ akanFemaleName);
+              }
+              else{
+                var akanMaleName=male[dayCode];
+                alert("Your Akan name is: "+ akanMaleName);
+              }
 
 }
 };
