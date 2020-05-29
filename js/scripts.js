@@ -39,25 +39,21 @@ function validate() {
     }
         //Compute leap year code
         if (year%100===0 && cc%4!==0){
-          leapYearCode=0;
+          var leapYearCode=0;
         }
           else if(year%4===0){
-          leapYearCode=1;
+          var leapYearCode=1;
         }
         else {
-          leapYearCode=0;
+          var leapYearCode=0;
       }
-      alert(leapYearCode)
-              //Compute day
-          /*  if (year%100===0 && cc%4!==0){
-              alert("not leap year");
-            }
-            else if(year%4===0){
-              alert("leap year");
-            }
-            else {
-              alert("not leap year");
-            }*/
+      //Compute Date
+          //var dateCode=parseInt(dd);
+            //Compute day
+              var daysOfWeek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+              var dayCode=(yearCode+monthCode+dd-leapYearCode)%7;
+              var day=daysOfWeek[dayCode];
+              alert(day);
 
 }
 };
