@@ -1,4 +1,3 @@
-//Declare constants
 
 //Find the value of each element in the form
 function validate() {
@@ -40,14 +39,25 @@ function validate() {
     }
         //Compute leap year code
         if (year%100===0 && cc%4!==0){
-          alert("not leap year");
+          leapYearCode=0;
         }
           else if(year%4===0){
-          alert("leap year");
+          leapYearCode=1;
         }
         else {
-        alert("not leap year");
+          leapYearCode=0;
       }
-      //alert(centuryCode);
+      alert(leapYearCode)
+              //Compute day
+          /*  if (year%100===0 && cc%4!==0){
+              alert("not leap year");
+            }
+            else if(year%4===0){
+              alert("leap year");
+            }
+            else {
+              alert("not leap year");
+            }*/
+
 }
 };
