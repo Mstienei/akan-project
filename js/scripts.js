@@ -8,6 +8,10 @@ function validate() {
   var gender = document.getElementById("Gender").value;
   if (cc === "" || yy === "" ||  mm === "" || dd === "" ){
     alert("Please provide all the required details in the form.");
+  }else if(dd<=0 || dd>31){
+    alert("Please enter a valid date.");;
+  }else if(mm<=0 || mm>12){
+    alert("Please enter a valid month.");;
   }
   else {
     //Compute year Code
@@ -58,11 +62,11 @@ function validate() {
               //Translate to Akan Name
               if (gender=="Female"){
                 var akanFemaleName=female[dayCode];
-                alert("Your Akan name is: "+ akanFemaleName);
+                alert("Your Akan name is "+ akanFemaleName);
               }
               else{
                 var akanMaleName=male[dayCode];
-                alert("Your Akan name is: "+ akanMaleName);
+                alert("Your Akan name is "+ akanMaleName);
               }
 
 }
