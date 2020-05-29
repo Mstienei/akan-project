@@ -8,7 +8,7 @@ function validate() {
   var dd = document.getElementById("DD").value;
   var gender = document.getElementById("Gender").value;
   if (cc === "" || yy === "" ||  mm === "" || dd === "" ){
-    alert("Please provide all the required details in the form");
+    alert("Please provide all the required details in the form.");
   }
   else{
     //Compute year Code
