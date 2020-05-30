@@ -10,7 +10,7 @@ _Technologies Used_
 * Bootstrap - framework for developing responsive, mobile-first websites
 
 #Live project site
-https://mstienei.github.io/akan-project
+[https://mstienei.github.io/akan-project]
 
 #Setup Instructions
 # Contributing
