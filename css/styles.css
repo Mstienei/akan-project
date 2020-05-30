@@ -9,3 +9,6 @@
 .card-header {
     padding:20px;
 }
+.card-footer {
+    text-align: center;
+}
