@@ -1,8 +1,11 @@
 .card-img-top {
-    height:380px;
+    height:450px;
 }
 .card-title {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
+}
+.card-header {
+    padding:20px;
 }
