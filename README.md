@@ -9,10 +9,12 @@ _Technologies Used_
 * Javascript - for scripting
 * Bootstrap - framework for developing responsive, mobile-first websites
 
-#Live project site
+# Live project site
 [https://mstienei.github.io/akan-project]
 
-#Setup Instructions
+# Setup Instructions
+Page has been set up using html,css,javascript and bootstrap
+
 # Contributing
 Please feel free to clone the project and build on it.
 
