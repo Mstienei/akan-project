@@ -66,11 +66,11 @@ function validate() {
               //Translate to Akan Name
               if (gender=="Female"){
                 var akanFemaleName=female[dayCode];
-                alert("Your Akan name is "+ akanFemaleName);
+                alert("You were born on a "+ day +".Your Akan name is "+ akanFemaleName);
               }
               else{
                 var akanMaleName=male[dayCode];
-                alert("Your Akan name is "+ akanMaleName);
+                alert("You were born on a "+ day +".Your Akan name is "+ akanMaleName);
               }
 
 }
