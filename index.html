@@ -19,17 +19,18 @@
 <!--      <h5 class="card-title">Special title treatment</h5> -->
           <p class="card-text">To find out your <strong> Akan </strong>name, please enter your birth details in the form below:</p>
           <form name="akanform" onsubmit="validate()">
+            <p id=results></p>
            <div class="form-group">
               <label for="YOB">Year of Birth:</label>
-              <input type="number" class="form-control" id="YOB" placeholder="e.g 1995">
+              <input type="number" class="form-control" id="YOB" maxlength="4" placeholder="e.g 1995">
            </div>
            <div class="form-group">
               <label for="MM">Month of Birth:</label>
-              <input type="number" class="form-control" id="MM" placeholder="e.g 9 for September">
+              <input type="number" class="form-control" maxlength="2" id="MM" placeholder="e.g 9 for September">
            </div>
            <div class="form-group">
               <label for="DD">Date of Birth:</label>
-              <input type="number" class="form-control" id="DD" placeholder="e.g 5 for 5th Day of the Month">
+              <input type="number" class="form-control" maxlength="2" id="DD" placeholder="e.g 5 for 5th Day of the Month">
            </div>
            <div class="form-group">
             <label for="Gender">Select Gender</label>
@@ -38,7 +39,7 @@
                 <option>Female</option>
               </select>
             </div>
-            <div class="form-group" style="float:right;">
+            <div class="form-group" style="float:left;">
               <input type="submit" value="Check Akan Name" id="submit">
             </div>
          </form>
