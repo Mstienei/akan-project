@@ -1,17 +1,21 @@
 
 //Find the value of each element in the form
 function validate() {
-  var cc = document.getElementById("CC").value;
-  var yy = document.getElementById("YY").value;
+  //var cc = document.getElementById("CC").value;
+  var yob = document.getElementById("YOB").value;
   var mm = document.getElementById("MM").value;
   var dd = document.getElementById("DD").value;
   var gender = document.getElementById("Gender").value;
-  if (cc === "" || yy === "" ||  mm === "" || dd === "" ){
+  var cc=yob.slice(0,2);
+  var yy=yob.slice(2,4);
+  if (yob === "" ||  mm === "" || dd === "" ){
     alert("Please provide all the required details in the form.");
   }else if(dd<=0 || dd>31){
     alert("Please enter a valid date.");;
   }else if(mm<=0 || mm>12){
     alert("Please enter a valid month.");;
+  }else if(yob<=1700 || yob>2300){
+    alert("Please enter year between 1700 and 2300.");;
   }
   else {
     //Compute year Code
