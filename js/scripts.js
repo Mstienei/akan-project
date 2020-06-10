@@ -71,7 +71,7 @@ function validate() {
               else{
                 var akanMaleName=male[dayCode];
                 alert("You were born on a "+ day +".Your Akan name is "+ akanMaleName);
-              }
+                }
 
 }
 };
